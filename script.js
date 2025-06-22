@@ -14,4 +14,21 @@ $(document).ready(function() {
         closeIcon.hide();             // Hide close icon
         menuIcon.show();              // Show menu icon
     });
+
+   let gridSlide = document.querySelectorAll(".grid_slide");
+let socialPopup = document.querySelectorAll(".social_btn_popup");
+
+gridSlide.forEach((gridItem, index) => {
+    let popup = socialPopup[index]; // Get the corresponding popup
+
+    gridItem.addEventListener("mouseenter", () => {
+        popup.style.visibility = "visible";
+        popup.style.opacity = "1";
+    });
+
+    gridItem.addEventListener("mouseleave", () => {
+        popup.style.visibility = "hidden";
+        popup.style.opacity = "0";
+    });
+});
 });
