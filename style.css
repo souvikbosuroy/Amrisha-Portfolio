@@ -779,6 +779,11 @@ footer .container .copyright {
         padding: 40px 15px;
         min-height: 100svh;
     }
+
+    .banner .container .row {
+        padding-top: 200px;
+        justify-content: start;
+    }
     .banner .container .row img {
         width: 120%;
         right: -40px;
