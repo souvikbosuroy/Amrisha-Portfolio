@@ -777,7 +777,7 @@ footer .container .copyright {
 
     .banner {
         padding: 40px 15px;
-        height: 100svh;
+        height: 400px;
     }
     .banner .container .row img {
         width: 120%;
@@ -792,6 +792,7 @@ footer .container .copyright {
 
     .about {
         padding: 40px 15px 40px 15px;
+        height: auto;
     }
 
     .about .container .row {
@@ -821,7 +822,7 @@ footer .container .copyright {
 
     .videos {
         padding: 40px 15px;
-        height: auto;
+        height: 320px;
     }
 
     .videos .container .row .heading h2 {
@@ -835,6 +836,7 @@ footer .container .copyright {
 
     .gallery {
         padding: 20px 15px;
+        height: 350px;
     }
 
     .gallery .container .row .heading h2 {
@@ -847,7 +849,7 @@ footer .container .copyright {
     }
 
     footer {
-        padding: 20px 15px;
+        padding: 40px 15px;
         gap: 20px;
     }
 
@@ -856,7 +858,7 @@ footer .container .copyright {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
     }
 
     footer .container .footer_menu {
