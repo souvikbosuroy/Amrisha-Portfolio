@@ -845,7 +845,7 @@ footer .container .copyright {
 
     .gallery {
         padding: 20px 15px;
-        min-height: auto;
+        min-height: auto !important;
     }
 
     .gallery .container .row .heading h2 {
