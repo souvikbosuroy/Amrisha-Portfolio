@@ -119,11 +119,11 @@ nav .container .nav_menu .nav_items .nav_item:last-child a:hover::after {
     width: 100%;
 }
 
-nav .container .nav_menu .menu_icon {
+nav .container .menu_icon {
     display: none;
 }
 
-nav .container .nav_menu .close_btn {
+nav .container .close_btn {
     display: none;
 }
 
@@ -310,6 +310,7 @@ nav .container .nav_menu .close_btn {
     justify-content: center;
     align-items: center;
     padding: 100px 40px 50px 40px;
+    overflow: hidden;
 }
 
 .videos .container {
