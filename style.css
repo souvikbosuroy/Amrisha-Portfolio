@@ -831,8 +831,12 @@ footer .container .copyright {
     }
 
     .videos .container .row .content video {
+        width: 50%;
         height: 200px;
     }
+
+        .videos .container .row .content video:last-child {
+            display: none;
 
     .gallery {
         padding: 20px 15px;
