@@ -347,7 +347,7 @@ nav .container .close_btn {
     align-items: center;
     flex-wrap: nowrap;
     gap: 20px;
-    overflow: visible;
+    overflow-x: visible;
 }
 
 .videos .container .row .content video {
