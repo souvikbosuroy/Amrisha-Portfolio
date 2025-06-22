@@ -777,12 +777,14 @@ footer .container .copyright {
 
     .banner {
         padding: 40px 15px;
-        min-height: 100svh;
+        min-height: 500px;
     }
 
     .banner .container .row {
         padding-bottom: 120px;
+        display:flex;
         justify-content: start;
+        align-items: start;
     }
     .banner .container .row img {
         width: 120%;
