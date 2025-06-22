@@ -777,7 +777,7 @@ footer .container .copyright {
 
     .banner {
         padding: 40px 15px;
-        height: 400px;
+        min-height: auto;
     }
     .banner .container .row img {
         width: 120%;
@@ -792,7 +792,7 @@ footer .container .copyright {
 
     .about {
         padding: 40px 15px 40px 15px;
-        height: auto;
+        min-height: auto;
     }
 
     .about .container .row {
@@ -822,7 +822,7 @@ footer .container .copyright {
 
     .videos {
         padding: 40px 15px;
-        height: 320px;
+        min-height: auto;
     }
 
     .videos .container .row .heading h2 {
@@ -836,7 +836,7 @@ footer .container .copyright {
 
     .gallery {
         padding: 20px 15px;
-        height: 350px;
+        min-height: auto;
     }
 
     .gallery .container .row .heading h2 {
