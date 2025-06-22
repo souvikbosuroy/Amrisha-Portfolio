@@ -777,7 +777,7 @@ footer .container .copyright {
 
     .banner {
         padding: 40px 15px;
-        min-height: 500px;
+        min-height: 100svh;
     }
 
     .banner .container .row {
