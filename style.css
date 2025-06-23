@@ -550,7 +550,7 @@ footer .container .copyright {
       grid-template-rows: repeat(3, 1fr); /* base row height */
     /*gap: 10px;
       padding: 10px; */
-    column-count: 3;
+    column-count: 4;
     column-gap: 0;
     row-gap: 0;
 }
