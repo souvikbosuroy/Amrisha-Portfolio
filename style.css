@@ -8,16 +8,16 @@
 }
 
 html.lenis {
-  height: auto;
-}
+      height: auto;
+    }
 
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
+    .lenis.lenis-smooth {
+      scroll-behavior: auto !important;
+    }
 
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
+    .lenis.lenis-stopped {
+      overflow: hidden;
+    }
 
 
 .container {
@@ -318,7 +318,7 @@ nav .container .close_btn {
 
 .videos {
     width: 100%;
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,18 +370,9 @@ nav .container .close_btn {
     object-position: center center;
 }
 
-
-
-
-
-
-
-
-
-
 .gallery {
     width: 100%;
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
