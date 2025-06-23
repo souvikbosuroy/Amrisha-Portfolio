@@ -31,4 +31,19 @@ gridSlide.forEach((gridItem, index) => {
         popup.style.opacity = "0";
     });
 });
+
+const lenis = new Lenis({
+    duration: 1.2,      // speed of the scroll
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easing function
+    smooth: true,
+    smoothTouch: false,
+    direction: 'vertical',
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 });

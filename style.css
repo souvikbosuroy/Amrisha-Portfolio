@@ -7,6 +7,19 @@
     font-family: "Michroma", sans-serif;
 }
 
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+
 .container {
     max-width: 1140px;
 }
