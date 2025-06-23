@@ -844,7 +844,7 @@ footer .container .copyright {
         align-items: center;
     }
 
-    nav .container .nav_menu .nav_items {
+    nav .container .nav_menu ul.nav_items {
         top: 60px;
     }
 
