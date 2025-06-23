@@ -556,7 +556,7 @@ footer .container .copyright {
 }
 
 .portfolio_grid .row .grid_slide {
-    display: inline-block;
+    display: flex;
     width: 100%;
     /* border-radius: 6px; */
     position: relative;
