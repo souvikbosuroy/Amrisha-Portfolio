@@ -82,4 +82,21 @@ gridSlide.forEach((gridItem, index) => {
         }
       );
     });
+
+
+
+
+
+    gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".fade-in", {
+  scrollTrigger: {
+    trigger: ".fade-in",
+    start: "top 80%",
+  },
+  y: 50,
+  opacity: 0,
+  duration: 1,
+});
+
 });
