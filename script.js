@@ -33,17 +33,53 @@ gridSlide.forEach((gridItem, index) => {
 });
 
   // Smooth Scroll
-  gsap.registerPlugin(ScrollTrigger);
+// Initialize Lenis
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+      smoothTouch: false,
+    });
 
-  const lenis = new Lenis({
-    lerp: 0.06,
-  });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-  lenis.on('scroll', ScrollTrigger.update);
+    requestAnimationFrame(raf);
 
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 1000);
-  });
+    // Sync Lenis with GSAP ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
 
-  gsap.ticker.lagSmoothing(0);
+    ScrollTrigger.scrollerProxy(document.body, {
+      scrollTop(value) {
+        return arguments.length ? lenis.scrollTo(value) : window.scrollY;
+      },
+      getBoundingClientRect() {
+        return {
+          top: 0, left: 0, width: window.innerWidth, height: window.innerHeight
+        };
+      },
+    });
+
+    lenis.on('scroll', ScrollTrigger.update);
+    ScrollTrigger.defaults({ scroller: document.body });
+
+    // Animate each fade-in element when it enters view
+    gsap.utils.toArray('.fade-in').forEach(el => {
+      gsap.fromTo(el,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+          }
+        }
+      );
+    });
 });
