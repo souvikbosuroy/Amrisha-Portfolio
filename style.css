@@ -7,17 +7,10 @@
     font-family: "Michroma", sans-serif;
 }
 
-html.lenis {
-      height: auto;
-    }
-
-    .lenis.lenis-smooth {
-      scroll-behavior: auto !important;
-    }
-
-    .lenis.lenis-stopped {
-      overflow: hidden;
-    }
+html,body{
+    overflow-x: hidden;
+    scroll-behavior: auto !important;
+}
 
 
 .container {
