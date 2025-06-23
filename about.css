@@ -5,29 +5,76 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    background: linear-gradient(#ffffff28, #000000) , url(./img/WhatsApp\ Image\ 2025-06-21\ at\ 18.41.56.jpeg) fixed; 
+    background: linear-gradient(#ffffff28, #000000), url(./img/WhatsApp\ Image\ 2025-06-21\ at\ 18.41.56.jpeg) fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
     .container {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+
         .row {
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             .main_heading {
                 font-size: 80px;
                 color: #fff;
             }
+
             .sub_heading {
                 font-size: 45px;
                 color: #fff;
                 text-align: center;
+            }
+        }
+    }
+}
+
+.identity {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #ffffff28, #000000), url(./img/490197778_18055568774273046_8013609691783771291_n.jpeg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    filter: grayscale(1);
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .row {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            h2 {
+                font-size: 60px;
+                color: #fff;
+            }
+            .sub_heading {
+                color: #fff;
+            }
+
+            .divider {
+                width: 80%;
+                height: 1px;
+                background-color: #fff;
             }
         }
     }
