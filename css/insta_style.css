@@ -1,0 +1,19 @@
+.insta_feed {
+    padding: 80px 0px;
+    background-color: #000;
+}
+
+.insta_feed .container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta_feed .container .insta_layout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

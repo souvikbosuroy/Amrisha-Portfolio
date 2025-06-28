@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Amrisha Thakur</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="about.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -19,23 +19,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo"><img src="./img/AT.png" alt="logo"></a>
-            <div class="nav_menu">
-                <ul class="nav_items">
-                    <li class="nav_item"><a href="about.html">About</a></li>
-                    <li class="nav_item"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="nav_item"><a href="#portfolio">Videos</a></li>
-                    <li class="nav_item"><a href="#portfolio">Collaboration</a></li>
-                    <li class="nav_item"><a href="#portfolio">Instagram</a></li>
-                    <li class="nav_item"><a href="#portfolio">Contact</a></li>
-                </ul>
-            </div>
-                            <i class="fa-solid fa-bars-staggered menu_icon"></i>
-                <i class="fa-solid fa-xmark close_btn"></i>
-        </div>
-    </nav>
+    <div class="header"></div>
     <main>
 
         <section class="about_hero">
@@ -44,7 +28,7 @@
                     <h1 class="main_heading">
                         ABOUT
                     </h1>
-                    <span class="sub_heading">Amrisha Thakur</span>
+                    <span class="sub_heading">Me</span>
                 </div>
             </div>
         </section>
@@ -58,31 +42,9 @@
             </div>
         </section>
 
-         </main>
-    <footer>
-        <div class="container">
-            <div class="logo">
-                <img src="./img/AT.png" alt="logo">
-            </div>
-            <div class="footer_menu">
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="#portfolio">Videos</a>
-                <a href="#portfolio">Collaboration</a>
-                <a href="#portfolio">Instagram</a>
-                <a href="#portfolio">Contact</a>
-            </div>
-            <div class="social_link_footer">
-                <a href="https://www.instagram.com/amrisha.thakur/" class="social_btn"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/amrishababan" class="social_btn"><i
-                        class="fa-brands fa-facebook-f"></i></a>
-            </div>
-        </div>
-        <div class="container footer_bottom">
-            <p class="copyright">Copyright &copy;2025. All rights reserved.</p>
-        </div>
-    </footer>
+    </main>
+        <div class="footer"></div>
+
 <!-- ✅ Load GSAP Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
@@ -93,7 +55,11 @@
 <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.41/dist/lenis.min.js"></script>
 
 <!-- ✅ Your JS File -->
-<script src="script.js"></script>
+<script src="./JS/script.js"></script>
+
+<!-- ✅ Load Components JS -->
+<script src="./JS/load_components.js"></script>
+
 </body>
 
 </html>

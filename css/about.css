@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    background: linear-gradient(#ffffff28, #000000), url(./img/WhatsApp\ Image\ 2025-06-21\ at\ 18.41.56.jpeg) fixed;
+    background: linear-gradient(#ffffff28, #000000), url(../img/WhatsApp\ Image\ 2025-06-21\ at\ 18.41.56.jpeg) fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -43,7 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to top, #ffffff28, #000000), url(./img/490197778_18055568774273046_8013609691783771291_n.jpeg) fixed;
+    background: linear-gradient(to top, #ffffff28, #000000), url(../img/490197778_18055568774273046_8013609691783771291_n.jpeg) fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
