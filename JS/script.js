@@ -47,6 +47,18 @@ $(document).ready(function ($) {
 
     gsap.ticker.lagSmoothing(0);
 
+window.addEventListener('DOMContentLoaded', () => {
+    const grid = document.querySelector('.gallery_wrapper');
+  imagesLoaded(grid, () => {
+    new Masonry(grid, {
+      itemSelector: '.gal_slide',
+      columnWidth: '.grid-sizer',
+      gutter: 16,
+      percentPosition: true
+    });
+  });
+  });
+
 });
 
 

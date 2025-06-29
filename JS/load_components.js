@@ -14,3 +14,12 @@ fetch('./global components/nav.html')
     });
   })
   .catch(error => console.error('Error loading nav:', error));
+
+    // Load Footer (separately)
+  fetch('./global components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.querySelector('.footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+  
